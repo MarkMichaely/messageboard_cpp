@@ -22,9 +22,12 @@ TEST_CASE("1: testing wether function propelry working")
 	Board b;
 	uint rand_row = rand() % 100;
 	uint rand_col = rand() % 100;
+	CHECK(b.read(0, 0, Direction::Vertical, 0) == "");
 	CHECK(b.read(0, 0, Direction::Vertical, 3).size() == 3);
 	CHECK(b.read(0, 0, Direction::Vertical, 3) == "___");
 	CHECK(b.read(0, 0, Direction::Horizontal, 3) == "___");
+	b.post(0, 0, Direction::Vertical, "");
+	CHECK(b.read(0, 0, Direction::Vertical, 3) == "___");
 	CHECK(b.read(rand_row, rand_col, Direction::Horizontal, 10) == "__________");
 	CHECK(b.read(rand_row, rand_col, Direction::Vertical, 10) == "__________");
 	b.post(0, 0, Direction::Vertical, "aaaaa");
