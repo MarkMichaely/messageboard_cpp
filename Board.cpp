@@ -3,6 +3,7 @@
  * 
  * sources used:
  * https://www.techiedelight.com/append-char-end-string-cpp/
+ * https://www.techiedelight.com/iterate-over-characters-string-cpp/
  * Author: Mark Michaely
  * Since : 2021-03
  */
