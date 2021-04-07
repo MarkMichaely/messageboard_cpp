@@ -1,6 +1,8 @@
 /**
  * program for message-board exercise.
  * 
+ * sources used:
+ * https://www.techiedelight.com/append-char-end-string-cpp/
  * Author: Mark Michaely
  * Since : 2021-03
  */
